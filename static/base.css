@@ -1,0 +1,85 @@
+html {
+  font-size: 16px;
+}
+
+@media screen and (max-width: 480px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+body {
+  font-family: var(--article-body-font);
+  color: #4d4d4d;
+  font-size: 1.125rem;
+  line-height: 1.78em;
+  max-width: 48rem;
+  margin: 2rem auto 0;
+  padding: 0 1rem;
+  text-align: justify;
+}
+
+a {
+  color: var(--accent-color);
+}
+
+.date {
+  font-family: var(--date-font);
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--accent-color);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--article-header-font);
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+}
+
+h1 {
+  margin-top: 0.25rem;
+  font-size: 1.9375rem;
+}
+
+h2 {
+  font-size: 1.625rem;
+}
+
+h3 {
+  font-size: 1.375rem;
+}
+
+h4 {
+  font-size: 1.125rem;
+}
+
+h5 {
+  font-size: 1.125rem;
+}
+
+hr {
+  border-top: 1px solid #ccc;
+  border-bottom: none;
+  width: 4.5rem;
+  margin: 3.5rem auto;
+}
+
+p, ul, ol, pre, table, blockquote  {
+  margin: 1.375rem 0;
+}
+
+ul ul, ol ol, ul ol, ol ul {
+  margin: 0 auto;
+}
+
+footer {
+  line-height: 2rem;
+  margin: 3rem 0;
+  text-align: center;
+  font-size: 0.875rem;
+  font-family: var(--footer-font);
+}
+
+.site-name {
+  font-family: var(--site-title-font);
+}

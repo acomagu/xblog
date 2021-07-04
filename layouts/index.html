@@ -1,0 +1,7 @@
+{{ define "style" }}
+  <link href="{{ .Site.BaseURL }}/index.css" rel="stylesheet" />
+{{ end }}
+{{ define "title" }}{{ partial "index/title.html" . }}{{ end }}
+{{ define "header" }}{{ partial "index/header.html" . }}{{ end }}
+{{ define "main" }}{{ partial "index/main.html" . }}{{ end }}
+{{ define "footer" }}{{ partial "index/footer.html" . }}{{ end }}

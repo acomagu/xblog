@@ -1,0 +1,10 @@
+<table>
+  {{ range .Pages }}
+    <tr>
+      <td class="date">{{ .Date.Format ( .Site.Params.dateformat | default "2006-01-02" ) }}</td>
+      <td class="title">
+        <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+      </td>
+    </tr>
+  {{ end }}
+</table>

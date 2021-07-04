@@ -1,0 +1,8 @@
+name = "xblog"
+license = "MIT"
+licenselink = "https://github.com/acomagu/xblog/blob/master/LICENSE"
+homepage = "https://github.com/acomagu/xblog"
+tags = ["blog", "simple", "minimal", "responsive", "personal"]
+
+[author]
+name = "acomagu"

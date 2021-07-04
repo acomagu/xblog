@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>{{ block "title" . }}{{ end }}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="{{ .Site.BaseURL }}/base.css" rel="stylesheet" />
+    {{ block "style" . }}{{ end }}
+    {{ template "_internal/opengraph.html" . }}
+    {{ template "_internal/schema.html" . }}
+    {{ template "_internal/twitter_cards.html" . }}
+    {{ template "_internal/google_analytics_async.html" . }}
+    {{ template "_internal/disqus.html" . }}
+    {{ range .AlternativeOutputFormats }}
+      {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
+    {{ end }}
+    <style>
+      /* The default values of style variables. Override them individually in /layouts/partials/head.html if needed. */
+      :root {
+        --accent-color: #3ead9f;
+        --article-header-font: "Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体", sans-serif;
+        --article-body-font: "Helvetica Neue",
+          Arial,
+          "Hiragino Kaku Gothic ProN",
+          "Hiragino Sans",
+          Meiryo,
+          sans-serif;
+        --site-title-font: Lato;
+        --date-font: Lato;
+        --footer-font: Lato;
+      }
+    </style>
+    {{ partial "head.html" . }}
+    {{ hugo.Generator }}
+  </head>
+  <body>
+    {{ block "header" . }}{{ end }}
+    {{ block "main" . }}{{ end }}
+    {{ block "footer" . }}{{ end }}
+  </body>
+</html>

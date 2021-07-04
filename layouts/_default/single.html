@@ -1,0 +1,7 @@
+{{ define "style" }}
+  <link href="{{ .Site.BaseURL }}/single.css" rel="stylesheet" />
+{{ end }}
+{{ define "title" }}{{ partial "single/title.html" . }}{{ end }}
+{{ define "header" }}{{ partial "single/header.html" . }}{{ end }}
+{{ define "main" }}{{ partial "single/main.html" . }}{{ end }}
+{{ define "footer" }}{{ partial "single/footer.html" . }}{{ end }}

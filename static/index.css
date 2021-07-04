@@ -1,0 +1,18 @@
+table {
+  border-collapse: separate;
+  border-spacing: 0 0.16rem;
+  margin: 1rem 0;
+  padding: 0;
+}
+
+tr {
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.7rem;
+  vertical-align: top;
+}
+
+.title {
+  padding-left: 1.125rem;
+  font-family: var(--article-header-font);
+}

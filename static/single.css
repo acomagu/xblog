@@ -1,0 +1,13 @@
+.back-link {
+  position: absolute;
+  margin-left: -1.5rem;
+  font-size: 1rem;
+  font-family: var(--article-body-font);
+}
+
+@media screen and (max-width: 864px) {
+  .back-link {
+    position: static;
+    margin: 0;
+  }
+}
