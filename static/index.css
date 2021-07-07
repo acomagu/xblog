@@ -12,7 +12,12 @@ tr {
   vertical-align: top;
 }
 
+.date {
+  white-space: nowrap;
+}
+
 .title {
   padding-left: 1.125rem;
   font-family: var(--article-header-font);
+  word-wrap: anywhere;
 }
