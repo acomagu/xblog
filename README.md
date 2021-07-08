@@ -37,4 +37,6 @@ This customization changes the accent color and fonts, like:
 
 ![screenshot3](https://i.imgur.com/2Kql1Xl.png)
 
+The list of available variables is [here](https://github.com/acomagu/xblog/blob/main/layouts/_default/baseof.html#L18).
+
 If you need more advanced customization, you can do it by overriding the [partial templates](./layouts/partials).
